@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "75535169605",
+    "firebase_url": "https://appmochilero-1eb31.firebaseio.com",
+    "project_id": "appmochilero-1eb31",
+    "storage_bucket": "appmochilero-1eb31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75535169605:android:98f67eb9d6d0c5b9",
+        "android_client_info": {
+          "package_name": "com.jdcasas.appmochilero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75535169605-lcs58u6qfthdc1vhvekfnku3s29gc93a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jdcasas.appmochilero",
+            "certificate_hash": "88a6730ef708537e7713f97e443da784075f0282"
+          }
+        },
+        {
+          "client_id": "75535169605-tcun6mtddbk4nfv2k0mp0k9lsptr2cuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa6HZReWNKOpEDXMpCg2uUpnA0lfD_W-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75535169605-tcun6mtddbk4nfv2k0mp0k9lsptr2cuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

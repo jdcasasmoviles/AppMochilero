@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AppMochilero</string>
+    <!-- ACTIVIDAD LoginActivity-->
+    <string name="title_activity_login">login</string>
+    <string name="prompt_usuario">Usuario</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <!-- Strings compartir paisaje -->
+    <string name="prompt_descripcion">Descripcion</string>
+    <string name="prompt_creado_por">Creado por</string>
+    <!-- MENSAJE  ACERCA DE -->
+    <string name="mensajeAcercaDe">
+        "Aplicacion:\n\tAppMochilero 1.0\n\tBuild Junio 19,2019\n\nHecho por:\n\tJdcasasmoviles\n\nContacto:\n\tjdcasasmoviles@gmail.com\n\t995949259\n\nCopyright (C) 2019 \n\tReservados todos los derechos"
+    </string>
+    <!-- Strings mensaje email -->
+    <string name="mail">jdcasasmoviles@gmail.com</string>
+    <string name="subject">AppMochilero</string>
+    <string name="envio">Este correo es enviado atraves de AppMochilero</string>
+</resources>

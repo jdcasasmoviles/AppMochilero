@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view_v_empresas"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#EEF8EF"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_lugares"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/item_image1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.4"
+                android:src="@drawable/camara"
+                />
+
+            <ImageView
+                android:id="@+id/item_image2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.4"
+                android:src="@drawable/camara" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_descripcion"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="DESCRIPCION"
+            android:background="@drawable/rounded_corners_azul"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/formularioletra"
+            android:layout_below="@+id/ll_lugares"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Este es un nuevo descriptor"
+            android:textSize="@dimen/formularioletra"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_descripcion"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_creado_por"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="CREADOR POR :  "
+            android:textColor="@color/color1"
+            android:background="@color/bgcolor"
+            android:textStyle="bold"
+            android:textSize="@dimen/formularioletra"
+            android:layout_below="@+id/tv_item1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Jesus Casas"
+            android:textSize="@dimen/formularioletra"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/tv_creado_por"
+            android:layout_below="@+id/tv_item1"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

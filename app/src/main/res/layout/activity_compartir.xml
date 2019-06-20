@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompartirActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bgcolor"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView7" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tw_compartir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded_corners_azul"
+                    android:gravity="center_horizontal"
+                    android:text="Compartir"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView"
+                    android:background="@color/bgcolor">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horizontalScrollView"
+                        android:padding="30dp"
+                        android:background="@color/bgcolor">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:background="@color/bgcolor">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/item_image1"
+                                    android:src="@drawable/camara"
+                                    android:background="#ffffff"
+                                    />
+                                <TextView
+                                    android:id="@+id/TextViewRegistrarse"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Imagen 1"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/item_image2"
+                                    android:src="@drawable/camara"
+                                    android:background="#ffffff"
+                                    />
+                                <TextView
+                                    android:id="@+id/TextViewM4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Imagen 2"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/et_descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_descripcion"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:text=""
+                        android:editable="false"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textMultiLine"
+                        android:lines="8"
+                        android:maxLines="10"
+                        android:minLines="6"
+                        android:scrollbars="vertical" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/et_creado_por"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:enabled="false"
+                        android:editable="false"
+                        android:hint="@string/prompt_creado_por"
+                        android:inputType="text"
+                       />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Compartir"
+                        android:textSize="@dimen/formularioletra"
+                        android:id="@+id/ButtonCompartir"
+                        android:layout_marginRight="4dip"
+                        android:layout_marginTop="16dp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.4"
+                        android:theme="@style/MyButton"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volver"
+                        android:textSize="@dimen/formularioletra"
+                        android:id="@+id/ButtonVolver"
+                        android:layout_marginRight="4dip"
+                        android:layout_marginTop="16dp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.4"
+                        android:theme="@style/MyButton"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
